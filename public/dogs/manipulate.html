@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Dogs</title>
+    <link rel="stylesheet" href="manipulateStyle.css">
+    <script src="manipulate.js" defer></script>
+</head>
+<body>
+    <h1>Manage Dogs</h1>
+    <div id="dogList"></div>
+
+    <div id="updateForm" style="display: none;">
+        <h2>Update Dog Details</h2>
+        <form id="updateDogForm">
+            <input type="hidden" id="updateDogId">
+            <label for="updateDogName">Name:</label>
+            <input type="text" id="updateDogName" required>
+            <label for="updateDogBreed">Breed:</label>
+            <input type="text" id="updateDogBreed" required>
+            <label for="updateDogAge">Age:</label>
+            <input type="number" id="updateDogAge" required>
+            <label for="updateDogColor">Color:</label>
+            <input type="text" id="updateDogColor" required>
+            <label for="updateDogPrice">Price:</label>
+            <input type="number" id="updateDogPrice" required>
+            <button type="submit">Update Dog</button>
+        </form>
+    </div>
+</body>
+</html>

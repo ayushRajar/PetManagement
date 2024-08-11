@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Cat</title>
+    <link rel="stylesheet" href="catstyle.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Purchase a Cat</h1>
+        <div id="catList"></div>
+        <div id="purchaseDetails" style="display:none;">
+            <h2>Purchase Details</h2>
+            <form id="purchaseForm">
+                <input type="hidden" id="selectedCatId">
+                <label for="buyerName">Your Name:</label>
+                <input type="text" id="buyerName" name="buyerName" required>
+
+                <label for="buyerEmail">Your Email:</label>
+                <input type="email" id="buyerEmail" name="buyerEmail" required>
+
+                <label for="purchasePrice">Purchase Price:</label>
+                <input type="text" id="purchasePrice" name="purchasePrice" readonly>
+
+               <button type="submit">Confirm Purchase</button>
+            </form>
+            <div id="purchaseMessage"></div>
+        </div>
+    </div>
+    <script src="catScript.js"></script>
+</body>
+</html>

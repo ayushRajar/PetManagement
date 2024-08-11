@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Details</title>
+    <link rel="stylesheet" href="catstyles.css">
+</head>
+<body>
+    <header>
+        <h1>Cat Details</h1>
+    </header>
+    
+    <main>
+        <section class="form-section">
+            <div class="container">
+                <form id="catForm">
+                    <label for="catName">Cat's Name:</label>
+                    <input type="text" id="catName" name="catName" required>
+
+                    <label for="catBreed">Breed:</label>
+                    <input type="text" id="catBreed" name="catBreed" required>
+
+                    <label for="catAge">Age (years):</label>
+                    <input type="number" id="catAge" name="catAge" required>
+
+                    <label for="catColor">Color:</label>
+                    <input type="text" id="catColor" name="catColor" required>
+
+                    <label for="catPrice">Price (Dollars):</label>
+                    <input type="number" id="price" name="price" required>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+        
+        <section class="result-section">
+            <div class="container">
+                <h2>Cat Details:</h2>
+                <div id="catDetails">
+                    <!-- Cat details will be displayed here -->
+                </div>
+            </div>
+        </section>
+        <div class="edit">
+            <A href="manipulateCat.html"><button onclick=""> Edit </button> </A>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Cat Details Page. All rights reserved.</p>
+    </footer>
+    
+    <script src="catscript.js"></script>
+</body>
+</html>

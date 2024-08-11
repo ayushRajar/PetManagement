@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Cats</title>
+    <link rel="stylesheet" href="manipulateCatstyle.css">
+    <script src="manipulateCat.js" defer></script>
+</head>
+<body>
+    <h1>Manage Cats</h1>
+    <div id="catList"></div>
+
+    <div id="updateForm" style="display: none;">
+        <h2>Update Cat Details</h2>
+        <form id="updateCatForm">
+            <input type="hidden" id="updateCatId">
+            <label for="updateCatName">Name:</label>
+            <input type="text" id="updateCatName" required>
+            <label for="updateCatBreed">Breed:</label>
+            <input type="text" id="updateCatBreed" required>
+            <label for="updateCatAge">Age:</label>
+            <input type="number" id="updateCatAge" required>
+            <label for="updateCatColor">Color:</label>
+            <input type="text" id="updateCatColor" required>
+            <label for="updateCatPrice">Price:</label>
+            <input type="number" id="updateCatPrice" required>
+            <button type="submit">Update Cat</button>
+        </form>
+    </div>
+</body>
+</html>

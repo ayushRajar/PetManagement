@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Details</title>
+    <link rel="stylesheet" href="dogstyle.css">
+</head>
+<body>
+    <header>
+        <h1>Dog Details</h1>
+    </header>
+    
+    <main>
+        <section class="form-section">
+            <div class="container">
+                <form id="dogForm">
+                    <label for="dogName">Dog's Name:</label>
+                    <input type="text" id="dogName" name="dogName" required>
+
+                    <label for="dogBreed">Breed:</label>
+                    <input type="text" id="dogBreed" name="dogBreed" required>
+
+                    <label for="dogAge">Age (years):</label>
+                    <input type="number" id="dogAge" name="dogAge" required>
+
+                    <label for="dogColor">Color:</label>
+                    <input type="text" id="dogColor" name="dogColor" required>
+
+                    <label for="dogAge">Price (Dollars):</label>
+                    <input type="number" id="price" name="price" required>
+
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+        
+        <section class="result-section">
+            <div class="container">
+                <h2>Dog Details:</h2>
+                <div id="dogDetails">
+                    <!-- Dog details will be displayed here -->
+                </div>
+            </div>
+        </section>
+        <div class="UpdateandDelete">
+            <A href='manipulate.html'><button type="Update">Edit Details</button></A>
+
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Dog Details Page. All rights reserved.</p>
+    </footer>
+    
+    <script src="dscript.js"></script>
+</body>
+</html>
